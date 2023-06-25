@@ -1,0 +1,220 @@
+
+.project01 {
+  margin-top: 20px;
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: space-around;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.project01-left {
+  order: 1;
+  width: 90%;
+  font-size: 11pt;
+  text-align: left;
+  padding: 0px;
+}
+
+.project01-right {
+  order: 2;
+  width: 100%;
+  font-size: 11pt;
+}
+
+.project01-right ul {
+  list-style-type: none;
+}
+
+.projectImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.projectImg:hover {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #ef8784;
+}
+
+.tag {
+  display: inline-block;
+  color: white;
+  padding: 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  border-radius: 84px;
+  border: 1px solid #f7ce46;
+  margin-top: 6px;
+}
+
+.project00 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: space-around;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.project00-left {
+  order: 1;
+  width: 90%;
+  font-size: 11pt;
+  text-align: left;
+  padding: 0px;
+}
+
+.project00-right {
+  order: 2;
+  width: 100%;
+  font-size: 11pt;
+}
+
+.project00-right ul {
+  list-style-type: none;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#myImg3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+#myImg2:hover {
+  opacity: 0.7;
+}
+
+#myImg3:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 900px;
+  width: auto;
+  height: auto;
+}
+
+.modal-content-div {
+  width: 20%;
+  height: 20%;
+  background-color: #ef8784;
+  color: #ef8784;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+  padding: 10px;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 1700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .parent-div.container {
+    background-color: #f1f1f1;
+  }
+}

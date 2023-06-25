@@ -1,0 +1,6 @@
+.menu {
+  order: 2;
+  height: auto;
+  border-bottom: 3px solid #dd7d79; /* 05AACC dd7d79 */
+  padding-bottom: 10px;
+}

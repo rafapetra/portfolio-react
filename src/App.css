@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../fonts/SecularOne.ttf") format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  font-size: 9pt;
+  background-color: #f7ce46 !important;
+  color: #fff !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12pt;
+  letter-spacing: 0.2px;
+}
+
+a {
+  color: #fbe785;
+  text-decoration: none;
+  display: inline;
+}
+
+a:hover {
+  color: #ef8784;
+}
+
+.parent-div {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 0px solid #a9bcd0;
+  border-radius: 15px;
   align-items: center;
+}
+
+.container {
+  order: 1;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border: 0px solid #a9bcd0;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #4d6f9a;
 }
 
-.App-link {
-  color: #61dafb;
+.container-2 {
+  order: 2;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border: 0px solid #a9bcd0;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d6f9a;
+  margin-top: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.container-3 {
+  order: 3;
+  width: 700px;
+  border: 0px solid #a9bcd0;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border: 0px solid #a9bcd0;
+  display: flex;
+  gap: 10px;
+  background-color: #05aacc;
 }
+
+.content-2 {
+  order: 3;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  background-color: #4d6f9a;
+}
+
+.container-2 h1 {
+  color: #ffb1af;
+  font-size: 16pt;
+  font-family: "MyCustomFont";
+  letter-spacing: 1px;
+}
+
+.content-projects {
+  order: 1;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.content-skill {
+  order: 1;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 15px;
+}
+
+.container-3 h1 {
+  color: #ffffff;
+  font-size: 16pt;
+  font-family: "MyCustomFont";
+  letter-spacing: 1px;
+}
+
